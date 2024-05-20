@@ -4,36 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS EXTERNO -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./src/css/index.css">
 
     <title>Cinemateca</title>
 </head>
 <body>
     <header>
         <div class="logo_cinemateca">
-            <img src="" alt="Logo" id="logo_imagem">
-            <h1>CINEMATECA</h1>
+            <img src="./src/Imagens/logo_cinemateca.png" alt="Logo" id="logo_imagem">
+            <p>CINEMATECA</p>
         </div>
         
         <nav>
-            <ul>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="quiz.html">Quiz</a></li>
-            </ul>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
 
-            <div class="mudar_tema">
-                <img src="" alt="tema_claro" id="claro">
-                <img src="" alt="tema_escuro" id="escuro">
-                <img src="" alt="tema_colorido" id="colorido">
+                <div class="mudar_tema">
+                    <img src="./src/Imagens/icones/sun_icon.png" alt="tema_claro" id="claro">
+                    <img src="./src/Imagens/icones/moon_icon.png" alt="tema_escuro" id="escuro">
+                    <img src="./src/Imagens/icones/rainbow_icon.png" alt="tema_colorido" id="colorido">
+                </div>
             </div>
         </nav>
-
-        <div class="linha"></div>
+        
     </header>
 
+    
+
     <main>
+        <div class="linha"></div>
+
         <!-- exposição do filme -->
         <div id="banner">
             <div id="slideshow-container">
@@ -59,50 +64,72 @@
             
         </div>
 
-        <section id="filmes">
-            <h1 class="titulo_secao">Filmes</h1>
-            <div class="linha"></div>
+        <!-- FILMES E SÉRIES -->
+        <section>
+            <div class="titulo_secao">
+                <h1 class="titulo_secao">Filmes</h1>
+                <div class="linha"></div>
+            </div>
 
-            <a href="">
-                <img src="" alt="Anatomia_filme">
-            </a>
-            <p class="nome_secao">Anatomia De Uma Queda</p>
-            <p class="ano_secao">2023</p>
-
-            <a href="">
-                <img src="" alt="Poetas_filme">
-            </a>
-            <p class="nome_secao">Sociedade dos Poetas Mortos</p>
-            <p class="ano_secao">1989</p>
-
-            <a href="">
-                <img src="" alt="Coraline_filme">
-            </a>
-            <p class="nome_secao">Coraline</p>
-            <p class="ano_secao">2009</p>
+            <div class="exposicao">
+                <div class="cartaz">
+                    <a href="">
+                        <img src="./src/Imagens/Filmes/Anatomia_de_uma_Queda/capa_filme.png" alt="Anatomia_filme">
+                    </a>
+                    <p class="nome_secao">Anatomia De Uma Queda</p>
+                    <p class="ano_secao">2023</p>
+                </div>
+                
+                <div class="cartaz">
+                    <a href="">
+                        <img src="./src/Imagens/Filmes/Dead_Poets_Society/capa_filme.png" alt="Poetas_filme">
+                    </a>
+                    <p class="nome_secao">Sociedade dos Poetas Mortos</p>
+                    <p class="ano_secao">1989</p>
+                </div>
+                
+                <div class="cartaz">
+                    <a href="">
+                        <img src="./src/Imagens/Filmes/Coraline/capa_filme.png" alt="Coraline_filme">
+                    </a>
+                    <p class="nome_secao">Coraline</p>
+                    <p class="ano_secao">2009</p>
+                </div>
+            </div>
         </section>
 
-        <section id="series">
-            <h1 class="titulo_secao">Séries</h1>
-            <div class="linha"></div>
+        <section>
+            <div class="titulo_secao">
+                <h1 class="titulo_secao">Séries</h1>
+                <div class="linha"></div>
+            </div>
+            
 
-            <a href="">
-                <img src="" alt="Alice_serie">
-            </a>
-            <p class="nome_secao">Alice In Bordeland</p>
-            <p class="ano_secao">2020</p>
-
-            <a href="">
-                <img src="" alt="TheBoys_serie">
-            </a>
-            <p class="nome_secao">The Boys</p>
-            <p class="ano_secao">2019</p>
-
-            <a href="">
-                <img src="" alt="GOT_serie">
-            </a>
-            <p class="nome_secao">Game Of Thrones</p>
-            <p class="ano_secao">2011</p>
+            <div class="exposicao">
+                <div class="cartaz">
+                    <a href="">
+                        <img src="./src/Imagens/Filmes/Alice_In_Bordeland/capa_filme.png" alt="Alice_serie">
+                    </a>
+                    <p class="nome_secao">Alice In Bordeland</p>
+                    <p class="ano_secao">2020</p>
+                </div>
+                
+                <div class="cartaz">
+                    <a href="">
+                        <img src="./src/Imagens/Filmes/TheBoys/capa_filme.png" alt="TheBoys_serie">
+                    </a>
+                    <p class="nome_secao">The Boys</p>
+                    <p class="ano_secao">2019</p>
+                </div>
+                
+                <div class="cartaz">
+                    <a href="">
+                        <img src="./src/Imagens/Filmes/Game_Of_Thrones/capa_filme.png" alt="GOT_serie">
+                    </a>
+                    <p class="nome_secao">Game Of Thrones</p>
+                    <p class="ano_secao">2011</p>
+                </div>
+            </div>
         </section>
         
         <div class="linha"></div>
@@ -113,16 +140,19 @@
 
         <section class="sobreNos">
             <div class="left">
-                <h1>Conheça o Stream Cinemateca</h1>
+                <h3>Conheça o Stream Cinemateca</h3>
+                <br>
                 <p>
                     A Cinemateca Online nasceu da paixão por filmes e séries, com o objetivo de proporcionar uma experiência única aos amantes do entretenimento audiovisual. Fundada em 2019, nossa plataforma oferece um vasto catálogo de filmes e séries, desde clássicos atemporais até os mais recentes lançamentos.
                 </p>
+                <br>
                 <p>
                     Nosso compromisso é levar entretenimento de qualidade para todos os lares, proporcionando acesso fácil e conveniente a uma vasta seleção de conteúdo, permitindo que nossos assinantes mergulhem em experiências cinematográficas emocionantes.
                 </p>
             </div>
             <div class="right">
-                <h1>Vantagens de Ser Assinante</h1>
+                <h3>Vantagens de Ser Assinante</h3>
+                <br>
                 <ul>
                     <li>Acesso ilimitado</li>
                     <li>Lançamentos antecipados</li>
@@ -131,9 +161,12 @@
                     <li>Acesso multiplataforma</li>
                     <li>Recomendações personalizadas</li>
                 </ul>
-                <button>
+
+                <a href="">
                     <h4>Conferir Planos</h4>
-                </button>
+                </a>
+                    
+                
             </div>
         </section>
 
@@ -143,10 +176,11 @@
     </main>
 
     <footer>
-        <img src="" alt="logo_cinemateca">
         <a href="">
-            <img src="" alt="voltar">
+            <img src="./src/Imagens/icones/voltar-icon.png" alt="voltar">
+            <p>Scroll Up</p>
         </a>
+        
     </footer>
 
     <!-- JavaScript EXTERNO -->
